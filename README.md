@@ -1,0 +1,2 @@
+# FPDual
+Prácticas Hibernate.
