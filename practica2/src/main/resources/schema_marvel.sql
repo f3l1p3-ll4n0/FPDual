@@ -1,0 +1,1 @@
+create table marvel_character (name varchar(100) not null, first_name  varchar(100) not null, last_name varchar(100) not null, es_chungo varchar(1),primary key (name));
