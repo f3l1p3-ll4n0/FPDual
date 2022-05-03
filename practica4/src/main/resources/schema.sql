@@ -1,0 +1,27 @@
+
+CREATE TABLE Person (ID BIGINT NOT NULL ,PRIMARY KEY ( ID ) );
+
+CREATE TABLE Phone (ID BIGINT NOT NULL ,NUMBER VARCHAR(255) ,PERSON_ID BIGINT ,PRIMARY KEY ( ID ));
+
+ALTER TABLE Phone ADD CONSTRAINT PERSON_ID_FK FOREIGN KEY (PERSON_ID) REFERENCES Person;
+
+
+
+create table USERS(
+  ID int not null AUTO_INCREMENT,
+  NAME varchar(100) not null,
+  STATUS int,
+  PRIMARY KEY ( ID )
+);
+
+CREATE TABLE country (
+  id   INTEGER      NOT NULL AUTO_INCREMENT,
+  name VARCHAR(128) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+create table BOOK(
+  ID int not null AUTO_INCREMENT,
+  NAME varchar(128) not null,
+  PRIMARY KEY ( ID )
+);
